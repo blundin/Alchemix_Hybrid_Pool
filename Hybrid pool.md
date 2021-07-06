@@ -56,7 +56,7 @@ This section is going to be a more detailed in-depth description of how the whol
 
 The current system for reference:
 
-![](LP cycle origional.png)
+![](https://raw.githubusercontent.com/biddls/Alchemix_Hybrid_Pool/main/LP%20cycle%20origional.png)
 
 The hybrid pool for reference:
 
@@ -120,7 +120,7 @@ the red and green sections are the same curve shifted in the x axis by the amoun
 
 Curve finance do not allow for people to modify their code so a new kind of LP pool will need to be devised. Building from the peg definition that was described earlier a UniSwap V2 pool and a constant price curve can be combined to provide 0 slippage over certain ranges and then the usual V2 curve elsewhere. The graph below shows the same curve but with different scaling&#39;s, the one that looks like a stable swap curve is where the assets are 1:1 inside of the pool. The &quot;weird&quot; looking on represents a curve with a 1:5 ratio. The weird thing about this is that regardless of the ratios they will all sample a curve that looks like the 1:1 one. This is because the values will be scaled and normalised so that a 1:5 pool will behave like it is on a 1:1 curve.
 
-![](on peg or na.png)
+![](https://raw.githubusercontent.com/biddls/Alchemix_Hybrid_Pool/main/on%20peg%20or%20na.png)
 
 All of these examples simulate a pool with only 2 assets, this is still applicable as the YC/C coins are abstracted away to 1 coin in the background creating multiple curves but only showing one.
 
